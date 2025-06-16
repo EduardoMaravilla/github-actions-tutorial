@@ -1,0 +1,13 @@
+name: "My first actions workflow"
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  my-first-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - echo "My first step"
+      - echo "Correr Pruebas"
+      - echo "Ver si todo funciona"
