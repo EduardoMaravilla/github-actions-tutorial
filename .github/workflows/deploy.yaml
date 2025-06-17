@@ -8,6 +8,7 @@ on:
 jobs:
   my-first-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: My first step
         run: echo "My first step"
@@ -17,3 +18,6 @@ jobs:
 
       - name: Ver si todo funciona
         run: echo "Ver si todo funciona"
+
+      - name: Imprimir variable secreta
+        run: echo "El valor del secreto es ${{ secrets.ONLINE_VALUE_ENV }}"
