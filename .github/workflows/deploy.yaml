@@ -20,7 +20,7 @@ jobs:
         run: echo "Ver si todo funciona"
 
       - name: Imprimir variable secreta
-        run: echo "El valor del secreto es ${{ secrets.ONLINE_VALUE_ENV }}"
+        run: echo "El valor del secreto es ${{ github.ref }}"
   run-test-project:
     runs-on: ubuntu-latest
     steps:
