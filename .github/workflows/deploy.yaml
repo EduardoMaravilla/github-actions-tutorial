@@ -17,7 +17,7 @@ jobs:
         run: echo "Correr Pruebas"
 
       - name: imprimir variable
-        run: echo "$ONLINE_VALUE_ENV"
+        run: echo "${{env.ONLINE_VALUE_ENV}}"
 
       - name: Imprimir variable secreta
         run: echo "El valor del secreto es ${{ github.ref }}"
